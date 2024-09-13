@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Adicionar Tarefa{% endblock %}
+{% block content %}
+    <h2>Adicionar Nova Tarefa</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.title.label }} {{ form.title() }}</p>
+        <p>{{ form.description.label }} {{ form.description() }}</p>
+        <p>{{ form.priority.label }} {{ form.priority() }}</p>
+        <p>{{ form.status.label }} {{ form.status() }}</p>
+        <p>{{ form.user_id.label }} {{ form.user_id() }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <a href="{{ url_for('dashboard') }}" class="btn">Voltar ao Dashboard</a>
+{% endblock %}
