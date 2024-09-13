@@ -15,14 +15,14 @@ Para criar um ambiente virtual, siga as instruções abaixo dependendo do seu si
 
    python -m venv .venv
 
-### Ativando o Ambiente Virtual
+## Ativando o Ambiente Virtual
 Depois de criar o ambiente virtual, você precisa ativá-lo:
 
 No terminal ou Prompt de Comando, execute:
   
   .\.venv\Scripts\activate
 
-### Instalando as Dependências
+## Instalando as Dependências
 Com o ambiente virtual ativado, você pode instalar as dependências listadas no arquivo requirements.txt:
 
 Execute o seguinte comando para instalar as dependências:
